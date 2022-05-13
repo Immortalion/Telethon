@@ -19,9 +19,6 @@ upload.reuploadCdnFile#9b2754a8 file_token:<a href="../../index.html#bytes">byte
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.upload.ReuploadCdnFileRequest(
-        file_token=<em>b'arbitrary\x7f data \xfa here'</em>,
-        request_token=<em>b'arbitrary\x7f data \xfa here'</em>
-    ))
+    result = client(functions.upload.ReuploadCdnFileRequest(file_token=<em>b'arbitrary\x7f data \xfa here'</em>,request_token=<em>b'arbitrary\x7f data \xfa here'</em>))
     <strong>for</strong> x <strong>in</strong> result:
         print(x)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

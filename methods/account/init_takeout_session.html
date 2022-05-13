@@ -19,13 +19,5 @@ account.initTakeoutSession#f05b4804 flags:# contacts:flags.0?<a href="../../inde
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.account.InitTakeoutSessionRequest(
-        contacts=<strong>True</strong>,
-        message_users=<strong>True</strong>,
-        message_chats=<strong>True</strong>,
-        message_megagroups=<strong>True</strong>,
-        message_channels=<strong>True</strong>,
-        files=<strong>True</strong>,
-        file_max_size=42
-    ))
+    result = client(functions.account.InitTakeoutSessionRequest(contacts=<strong>True</strong>,message_users=<strong>True</strong>,message_chats=<strong>True</strong>,message_megagroups=<strong>True</strong>,message_channels=<strong>True</strong>,files=<strong>True</strong>,file_max_size=42))
     print(result.stringify())</pre></details><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

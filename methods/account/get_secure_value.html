@@ -19,8 +19,6 @@ account.getSecureValue#73665bc2 types:<a href="../../index.html#vector">Vector</
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.account.GetSecureValueRequest(
-        types=[types.SecureValueTypePersonalDetails()]
-    ))
+    result = client(functions.account.GetSecureValueRequest(types=[types.SecureValueTypePersonalDetails()]))
     <strong>for</strong> x <strong>in</strong> result:
         print(x)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

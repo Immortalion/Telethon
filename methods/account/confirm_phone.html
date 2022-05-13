@@ -19,8 +19,5 @@ account.confirmPhone#5f2178c3 phone_code_hash:<a href="../../index.html#string">
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.account.ConfirmPhoneRequest(
-        phone_code_hash=<em>'some string here'</em>,
-        phone_code=<em>'some string here'</em>
-    ))
+    result = client(functions.account.ConfirmPhoneRequest(phone_code_hash=<em>'some string here'</em>,phone_code=<em>'some string here'</em>))
     print(result)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

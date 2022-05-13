@@ -19,15 +19,5 @@ messages.forwardMessages#cc30290b flags:# silent:flags.5?<a href="../../index.ht
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.ForwardMessagesRequest(
-        from_peer=<em>'username'</em>,
-        id=[42],
-        to_peer=<em>'username'</em>,
-        with_my_score=<strong>True</strong>,
-        drop_author=<strong>True</strong>,
-        drop_media_captions=<strong>True</strong>,
-        noforwards=<strong>True</strong>,
-        schedule_date=datetime.datetime(2018, 6, 25),
-        send_as=<em>'username'</em>
-    ))
+    result = client(functions.messages.ForwardMessagesRequest(from_peer=<em>'username'</em>,id=[42],to_peer=<em>'username'</em>,with_my_score=<strong>True</strong>,drop_author=<strong>True</strong>,drop_media_captions=<strong>True</strong>,noforwards=<strong>True</strong>,schedule_date=datetime.datetime(2018, 6, 25),send_as=<em>'username'</em>))
     print(result.stringify())</pre></details><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

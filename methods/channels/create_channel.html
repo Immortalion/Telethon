@@ -19,16 +19,5 @@ channels.createChannel#3d5fb10f flags:# broadcast:flags.0?<a href="../../index.h
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.channels.CreateChannelRequest(
-        title=<em>'My awesome title'</em>,
-        about=<em>'some string here'</em>,
-        megagroup=<strong>True</strong>,
-        for_import=<strong>True</strong>,
-        geo_point=types.InputGeoPoint(
-            lat=7.13,
-            long=7.13,
-            accuracy_radius=42
-        ),
-        address=<em>'some string here'</em>
-    ))
+    result = client(functions.channels.CreateChannelRequest(title=<em>'My awesome title'</em>,about=<em>'some string here'</em>,megagroup=<strong>True</strong>,for_import=<strong>True</strong>,geo_point=types.InputGeoPoint(lat=7.13,long=7.13,accuracy_radius=42),address=<em>'some string here'</em>))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

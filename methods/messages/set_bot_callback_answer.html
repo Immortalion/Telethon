@@ -19,11 +19,5 @@ messages.setBotCallbackAnswer#d58f130a flags:# alert:flags.1?<a href="../../inde
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.SetBotCallbackAnswerRequest(
-        query_id=-12398745604826,
-        cache_time=42,
-        alert=<strong>True</strong>,
-        message=<em>'Hello there!'</em>,
-        url=<em>'some string here'</em>
-    ))
+    result = client(functions.messages.SetBotCallbackAnswerRequest(query_id=-12398745604826,cache_time=42,alert=<strong>True</strong>,message=<em>'Hello there!'</em>,url=<em>'some string here'</em>))
     print(result)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

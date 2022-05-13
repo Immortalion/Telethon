@@ -19,13 +19,5 @@ account.installTheme#c727bb3b flags:# dark:flags.0?<a href="../../index.html#tru
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.account.InstallThemeRequest(
-        dark=<strong>True</strong>,
-        theme=types.InputTheme(
-            id=-12398745604826,
-            access_hash=-12398745604826
-        ),
-        format=<em>'some string here'</em>,
-        base_theme=types.BaseThemeClassic()
-    ))
+    result = client(functions.account.InstallThemeRequest(dark=<strong>True</strong>,theme=types.InputTheme(id=-12398745604826,access_hash=-12398745604826),format=<em>'some string here'</em>,base_theme=types.BaseThemeClassic()))
     print(result)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

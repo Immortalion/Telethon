@@ -19,8 +19,6 @@ messages.receivedQueue#55a5bb66 max_qts:<a href="../../index.html#int">int</a> =
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.ReceivedQueueRequest(
-        max_qts=42
-    ))
+    result = client(functions.messages.ReceivedQueueRequest(max_qts=42))
     <strong>for</strong> x <strong>in</strong> result:
         print(x)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

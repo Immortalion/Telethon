@@ -19,17 +19,5 @@ phone.editGroupCallParticipant#a5273abf flags:# call:<a href="../../types/input_
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.phone.EditGroupCallParticipantRequest(
-        call=types.InputGroupCall(
-            id=-12398745604826,
-            access_hash=-12398745604826
-        ),
-        participant=<em>'username'</em>,
-        muted=<strong>False</strong>,
-        volume=42,
-        raise_hand=<strong>False</strong>,
-        video_stopped=<strong>False</strong>,
-        video_paused=<strong>False</strong>,
-        presentation_paused=<strong>False</strong>
-    ))
+    result = client(functions.phone.EditGroupCallParticipantRequest(call=types.InputGroupCall(id=-12398745604826,access_hash=-12398745604826),participant=<em>'username'</em>,muted=<strong>False</strong>,volume=42,raise_hand=<strong>False</strong>,video_stopped=<strong>False</strong>,video_paused=<strong>False</strong>,presentation_paused=<strong>False</strong>))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

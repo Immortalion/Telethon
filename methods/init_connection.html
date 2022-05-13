@@ -19,19 +19,5 @@ initConnection#c1cd5ea9 {X:Type} flags:# api_id:<a href="../index.html#int">int<
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.InitConnectionRequest(
-        api_id=42,
-        device_model=<em>'ASUS Laptop'</em>,
-        system_version=<em>'Arch Linux'</em>,
-        app_version=<em>'1.0'</em>,
-        system_lang_code=<em>'en'</em>,
-        lang_pack=<em>''</em>,
-        lang_code=<em>'en'</em>,
-        query=other_request,
-        proxy=types.InputClientProxy(
-            address=<em>'some string here'</em>,
-            port=42
-        ),
-        params=types.JsonNull()
-    ))
+    result = client(functions.InitConnectionRequest(api_id=42,device_model=<em>'ASUS Laptop'</em>,system_version=<em>'Arch Linux'</em>,app_version=<em>'1.0'</em>,system_lang_code=<em>'en'</em>,lang_pack=<em>''</em>,lang_code=<em>'en'</em>,query=other_request,proxy=types.InputClientProxy(address=<em>'some string here'</em>,port=42),params=types.JsonNull()))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../";</script><script src="../js/search.js"></script></body></html>

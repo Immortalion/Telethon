@@ -19,9 +19,5 @@ upload.getCdnFile#2000bcc3 file_token:<a href="../../index.html#bytes">bytes</a>
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.upload.GetCdnFileRequest(
-        file_token=<em>b'arbitrary\x7f data \xfa here'</em>,
-        offset=42,
-        limit=100
-    ))
+    result = client(functions.upload.GetCdnFileRequest(file_token=<em>b'arbitrary\x7f data \xfa here'</em>,offset=42,limit=100))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

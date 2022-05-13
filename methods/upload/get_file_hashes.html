@@ -19,14 +19,6 @@ upload.getFileHashes#c7025931 location:<a href="../../types/input_file_location.
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.upload.GetFileHashesRequest(
-        location=types.InputFileLocation(
-            volume_id=-12398745604826,
-            local_id=42,
-            secret=-12398745604826,
-            file_reference=<em>b'arbitrary\x7f data \xfa here'</em>
-        ),
-        offset=42
-    ))
+    result = client(functions.upload.GetFileHashesRequest(location=types.InputFileLocation(volume_id=-12398745604826,local_id=42,secret=-12398745604826,file_reference=<em>b'arbitrary\x7f data \xfa here'</em>),offset=42))
     <strong>for</strong> x <strong>in</strong> result:
         print(x)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

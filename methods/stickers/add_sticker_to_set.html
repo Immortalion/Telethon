@@ -19,24 +19,5 @@ stickers.addStickerToSet#8653febe stickerset:<a href="../../types/input_sticker_
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.stickers.AddStickerToSetRequest(
-        stickerset=types.InputStickerSetID(
-            id=-12398745604826,
-            access_hash=-12398745604826
-        ),
-        sticker=types.InputStickerSetItem(
-            document=types.InputDocument(
-                id=-12398745604826,
-                access_hash=-12398745604826,
-                file_reference=<em>b'arbitrary\x7f data \xfa here'</em>
-            ),
-            emoji=<em>'some string here'</em>,
-            mask_coords=types.MaskCoords(
-                n=42,
-                x=7.13,
-                y=7.13,
-                zoom=7.13
-            )
-        )
-    ))
+    result = client(functions.stickers.AddStickerToSetRequest(stickerset=types.InputStickerSetID(id=-12398745604826,access_hash=-12398745604826),sticker=types.InputStickerSetItem(document=types.InputDocument(id=-12398745604826,access_hash=-12398745604826,file_reference=<em>b'arbitrary\x7f data \xfa here'</em>),emoji=<em>'some string here'</em>,mask_coords=types.MaskCoords(n=42,x=7.13,y=7.13,zoom=7.13))))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

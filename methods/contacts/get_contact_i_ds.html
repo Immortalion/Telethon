@@ -19,8 +19,6 @@ contacts.getContactIDs#7adc669d hash:<a href="../../index.html#long">long</a> = 
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.contacts.GetContactIDsRequest(
-        hash=-12398745604826
-    ))
+    result = client(functions.contacts.GetContactIDsRequest(hash=-12398745604826))
     <strong>for</strong> x <strong>in</strong> result:
         print(x)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

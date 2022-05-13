@@ -19,16 +19,5 @@ messages.setBotShippingResults#e5f672fa flags:# query_id:<a href="../../index.ht
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.SetBotShippingResultsRequest(
-        query_id=-12398745604826,
-        error=<em>'some string here'</em>,
-        shipping_options=[types.ShippingOption(
-            id=<em>'some string here'</em>,
-            title=<em>'My awesome title'</em>,
-            prices=[types.LabeledPrice(
-                label=<em>'some string here'</em>,
-                amount=-12398745604826
-            )]
-        )]
-    ))
+    result = client(functions.messages.SetBotShippingResultsRequest(query_id=-12398745604826,error=<em>'some string here'</em>,shipping_options=[types.ShippingOption(id=<em>'some string here'</em>,title=<em>'My awesome title'</em>,prices=[types.LabeledPrice(label=<em>'some string here'</em>,amount=-12398745604826)])]))
     print(result)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

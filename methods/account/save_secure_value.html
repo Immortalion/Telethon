@@ -19,53 +19,5 @@ account.saveSecureValue#899fe31d value:<a href="../../types/input_secure_value.h
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.account.SaveSecureValueRequest(
-        value=types.InputSecureValue(
-            type=types.SecureValueTypePersonalDetails(),
-            data=types.SecureData(
-                data=<em>b'arbitrary\x7f data \xfa here'</em>,
-                data_hash=<em>b'arbitrary\x7f data \xfa here'</em>,
-                secret=<em>b'arbitrary\x7f data \xfa here'</em>
-            ),
-            front_side=types.InputSecureFileUploaded(
-                id=-12398745604826,
-                parts=42,
-                md5_checksum=<em>'some string here'</em>,
-                file_hash=<em>b'arbitrary\x7f data \xfa here'</em>,
-                secret=<em>b'arbitrary\x7f data \xfa here'</em>
-            ),
-            reverse_side=types.InputSecureFileUploaded(
-                id=-12398745604826,
-                parts=42,
-                md5_checksum=<em>'some string here'</em>,
-                file_hash=<em>b'arbitrary\x7f data \xfa here'</em>,
-                secret=<em>b'arbitrary\x7f data \xfa here'</em>
-            ),
-            selfie=types.InputSecureFileUploaded(
-                id=-12398745604826,
-                parts=42,
-                md5_checksum=<em>'some string here'</em>,
-                file_hash=<em>b'arbitrary\x7f data \xfa here'</em>,
-                secret=<em>b'arbitrary\x7f data \xfa here'</em>
-            ),
-            translation=[types.InputSecureFileUploaded(
-                id=-12398745604826,
-                parts=42,
-                md5_checksum=<em>'some string here'</em>,
-                file_hash=<em>b'arbitrary\x7f data \xfa here'</em>,
-                secret=<em>b'arbitrary\x7f data \xfa here'</em>
-            )],
-            files=[types.InputSecureFileUploaded(
-                id=-12398745604826,
-                parts=42,
-                md5_checksum=<em>'some string here'</em>,
-                file_hash=<em>b'arbitrary\x7f data \xfa here'</em>,
-                secret=<em>b'arbitrary\x7f data \xfa here'</em>
-            )],
-            plain_data=types.SecurePlainPhone(
-                phone=<em>'some string here'</em>
-            )
-        ),
-        secure_secret_id=-12398745604826
-    ))
+    result = client(functions.account.SaveSecureValueRequest(value=types.InputSecureValue(type=types.SecureValueTypePersonalDetails(),data=types.SecureData(data=<em>b'arbitrary\x7f data \xfa here'</em>,data_hash=<em>b'arbitrary\x7f data \xfa here'</em>,secret=<em>b'arbitrary\x7f data \xfa here'</em>),front_side=types.InputSecureFileUploaded(id=-12398745604826,parts=42,md5_checksum=<em>'some string here'</em>,file_hash=<em>b'arbitrary\x7f data \xfa here'</em>,secret=<em>b'arbitrary\x7f data \xfa here'</em>),reverse_side=types.InputSecureFileUploaded(id=-12398745604826,parts=42,md5_checksum=<em>'some string here'</em>,file_hash=<em>b'arbitrary\x7f data \xfa here'</em>,secret=<em>b'arbitrary\x7f data \xfa here'</em>),selfie=types.InputSecureFileUploaded(id=-12398745604826,parts=42,md5_checksum=<em>'some string here'</em>,file_hash=<em>b'arbitrary\x7f data \xfa here'</em>,secret=<em>b'arbitrary\x7f data \xfa here'</em>),translation=[types.InputSecureFileUploaded(id=-12398745604826,parts=42,md5_checksum=<em>'some string here'</em>,file_hash=<em>b'arbitrary\x7f data \xfa here'</em>,secret=<em>b'arbitrary\x7f data \xfa here'</em>)],files=[types.InputSecureFileUploaded(id=-12398745604826,parts=42,md5_checksum=<em>'some string here'</em>,file_hash=<em>b'arbitrary\x7f data \xfa here'</em>,secret=<em>b'arbitrary\x7f data \xfa here'</em>)],plain_data=types.SecurePlainPhone(phone=<em>'some string here'</em>)),secure_secret_id=-12398745604826))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

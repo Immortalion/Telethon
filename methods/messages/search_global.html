@@ -19,15 +19,5 @@ messages.searchGlobal#4bc6589a flags:# folder_id:flags.0?<a href="../../index.ht
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.SearchGlobalRequest(
-        q=<em>'some string here'</em>,
-        filter=types.InputMessagesFilterPhotos(),
-        min_date=datetime.datetime(2018, 6, 25),
-        max_date=datetime.datetime(2018, 6, 25),
-        offset_rate=42,
-        offset_peer=<em>'username'</em>,
-        offset_id=42,
-        limit=100,
-        folder_id=42
-    ))
+    result = client(functions.messages.SearchGlobalRequest(q=<em>'some string here'</em>,filter=types.InputMessagesFilterPhotos(),min_date=datetime.datetime(2018, 6, 25),max_date=datetime.datetime(2018, 6, 25),offset_rate=42,offset_peer=<em>'username'</em>,offset_id=42,limit=100,folder_id=42))
     print(result.stringify())</pre></details><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

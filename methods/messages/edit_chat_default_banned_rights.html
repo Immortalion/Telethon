@@ -19,21 +19,5 @@ messages.editChatDefaultBannedRights#a5866b41 peer:<a href="../../types/input_pe
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.EditChatDefaultBannedRightsRequest(
-        peer=<em>'username'</em>,
-        banned_rights=types.ChatBannedRights(
-            until_date=datetime.timedelta(days=14),
-            view_messages=<strong>None</strong>,
-            send_messages=<strong>None</strong>,
-            send_media=<strong>True</strong>,
-            send_stickers=<strong>True</strong>,
-            send_gifs=<strong>True</strong>,
-            send_games=<strong>True</strong>,
-            send_inline=<strong>True</strong>,
-            send_polls=<strong>True</strong>,
-            change_info=<strong>True</strong>,
-            invite_users=<strong>True</strong>,
-            pin_messages=<strong>True</strong>
-        )
-    ))
+    result = client(functions.messages.EditChatDefaultBannedRightsRequest(peer=<em>'username'</em>,banned_rights=types.ChatBannedRights(until_date=datetime.timedelta(days=14),view_messages=<strong>None</strong>,send_messages=<strong>None</strong>,send_media=<strong>True</strong>,send_stickers=<strong>True</strong>,send_gifs=<strong>True</strong>,send_games=<strong>True</strong>,send_inline=<strong>True</strong>,send_polls=<strong>True</strong>,change_info=<strong>True</strong>,invite_users=<strong>True</strong>,pin_messages=<strong>True</strong>)))
     print(result.stringify())</pre></details><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

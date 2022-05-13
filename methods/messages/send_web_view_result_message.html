@@ -19,35 +19,5 @@ messages.sendWebViewResultMessage#0a4314f5 bot_query_id:<a href="../../index.htm
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.SendWebViewResultMessageRequest(
-        bot_query_id=<em>'some string here'</em>,
-        result=types.InputBotInlineResult(
-            id=<em>'some string here'</em>,
-            type=<em>'some string here'</em>,
-            send_message=types.InputBotInlineMessageMediaAuto(
-                message=<em>'Hello there!'</em>
-            ),
-            title=<em>'My awesome title'</em>,
-            description=<em>'some string here'</em>,
-            url=<em>'some string here'</em>,
-            thumb=types.InputWebDocument(
-                url=<em>'some string here'</em>,
-                size=42,
-                mime_type=<em>'some string here'</em>,
-                attributes=[types.DocumentAttributeImageSize(
-                    w=42,
-                    h=42
-                )]
-            ),
-            content=types.InputWebDocument(
-                url=<em>'some string here'</em>,
-                size=42,
-                mime_type=<em>'some string here'</em>,
-                attributes=[types.DocumentAttributeImageSize(
-                    w=42,
-                    h=42
-                )]
-            )
-        )
-    ))
+    result = client(functions.messages.SendWebViewResultMessageRequest(bot_query_id=<em>'some string here'</em>,result=types.InputBotInlineResult(id=<em>'some string here'</em>,type=<em>'some string here'</em>,send_message=types.InputBotInlineMessageMediaAuto(message=<em>'Hello there!'</em>),title=<em>'My awesome title'</em>,description=<em>'some string here'</em>,url=<em>'some string here'</em>,thumb=types.InputWebDocument(url=<em>'some string here'</em>,size=42,mime_type=<em>'some string here'</em>,attributes=[types.DocumentAttributeImageSize(w=42,h=42)]),content=types.InputWebDocument(url=<em>'some string here'</em>,size=42,mime_type=<em>'some string here'</em>,attributes=[types.DocumentAttributeImageSize(w=42,h=42)]))))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

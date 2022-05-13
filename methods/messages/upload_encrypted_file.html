@@ -19,16 +19,5 @@ messages.uploadEncryptedFile#5057c497 peer:<a href="../../types/input_encrypted_
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.UploadEncryptedFileRequest(
-        peer=types.InputEncryptedChat(
-            chat_id=478614198,
-            access_hash=-12398745604826
-        ),
-        file=types.InputEncryptedFileUploaded(
-            id=-12398745604826,
-            parts=42,
-            md5_checksum=<em>'some string here'</em>,
-            key_fingerprint=42
-        )
-    ))
+    result = client(functions.messages.UploadEncryptedFileRequest(peer=types.InputEncryptedChat(chat_id=478614198,access_hash=-12398745604826),file=types.InputEncryptedFileUploaded(id=-12398745604826,parts=42,md5_checksum=<em>'some string here'</em>,key_fingerprint=42)))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

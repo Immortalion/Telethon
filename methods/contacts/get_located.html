@@ -19,12 +19,5 @@ contacts.getLocated#d348bc44 flags:# background:flags.1?<a href="../../index.htm
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.contacts.GetLocatedRequest(
-        geo_point=types.InputGeoPoint(
-            lat=7.13,
-            long=7.13,
-            accuracy_radius=42
-        ),
-        self_expires=42
-    ))
+    result = client(functions.contacts.GetLocatedRequest(geo_point=types.InputGeoPoint(lat=7.13,long=7.13,accuracy_radius=42),self_expires=42))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

@@ -19,13 +19,5 @@ phone.joinGroupCallPresentation#cbea6bc4 call:<a href="../../types/input_group_c
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.phone.JoinGroupCallPresentationRequest(
-        call=types.InputGroupCall(
-            id=-12398745604826,
-            access_hash=-12398745604826
-        ),
-        params=types.DataJSON(
-            data=<em>'some string here'</em>
-        )
-    ))
+    result = client(functions.phone.JoinGroupCallPresentationRequest(call=types.InputGroupCall(id=-12398745604826,access_hash=-12398745604826),params=types.DataJSON(data=<em>'some string here'</em>)))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

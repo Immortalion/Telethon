@@ -19,9 +19,5 @@ photos.uploadProfilePhoto#89f30f69 flags:# file:flags.0?<a href="../../types/inp
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.photos.UploadProfilePhotoRequest(
-        file=client.upload_file(<em>'/path/to/file.jpg'</em>),
-        video=client.upload_file(<em>'/path/to/file.mp4'</em>),
-        video_start_ts=7.13
-    ))
+    result = client(functions.photos.UploadProfilePhotoRequest(file=client.upload_file(<em>'/path/to/file.jpg'</em>),video=client.upload_file(<em>'/path/to/file.mp4'</em>),video_start_ts=7.13))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>
