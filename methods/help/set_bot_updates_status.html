@@ -19,5 +19,8 @@ help.setBotUpdatesStatus#ec22cfcd pending_updates_count:<a href="../../index.htm
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.help.SetBotUpdatesStatusRequest(pending_updates_count=42,message=<em>'Hello there!'</em>))
+    result = client(functions.help.SetBotUpdatesStatusRequest(
+        pending_updates_count=42,
+        message=<em>'Hello there!'</em>
+    ))
     print(result)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

@@ -19,5 +19,9 @@ channels.deleteHistory#9baa9647 flags:# for_everyone:flags.0?<a href="../../inde
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.channels.DeleteHistoryRequest(channel=<em>'username'</em>,max_id=0,for_everyone=<strong>True</strong>))
+    result = client(functions.channels.DeleteHistoryRequest(
+        channel=<em>'username'</em>,
+        max_id=0,
+        for_everyone=<strong>True</strong>
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

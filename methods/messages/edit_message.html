@@ -19,5 +19,20 @@ messages.editMessage#48f71778 flags:# no_webpage:flags.1?<a href="../../index.ht
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.EditMessageRequest(peer=<em>'username'</em>,id=42,no_webpage=<strong>True</strong>,message=<em>'Hello there!'</em>,media=types.InputMediaUploadedPhoto(file=client.upload_file(<em>'/path/to/file.jpg'</em>),stickers=[types.InputDocument(id=-12398745604826,access_hash=-12398745604826,file_reference=<em>b'arbitrary\x7f data \xfa here'</em>)],ttl_seconds=42),schedule_date=datetime.datetime(2018, 6, 25)))
+    result = client(functions.messages.EditMessageRequest(
+        peer=<em>'username'</em>,
+        id=42,
+        no_webpage=<strong>True</strong>,
+        message=<em>'Hello there!'</em>,
+        media=types.InputMediaUploadedPhoto(
+            file=client.upload_file(<em>'/path/to/file.jpg'</em>),
+            stickers=[types.InputDocument(
+                id=-12398745604826,
+                access_hash=-12398745604826,
+                file_reference=<em>b'arbitrary\x7f data \xfa here'</em>
+            )],
+            ttl_seconds=42
+        ),
+        schedule_date=datetime.datetime(2018, 6, 25)
+    ))
     print(result.stringify())</pre></details><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

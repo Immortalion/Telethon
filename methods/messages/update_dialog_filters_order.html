@@ -19,5 +19,7 @@ messages.updateDialogFiltersOrder#c563c1e4 order:<a href="../../index.html#vecto
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.UpdateDialogFiltersOrderRequest(order=[42]))
+    result = client(functions.messages.UpdateDialogFiltersOrderRequest(
+        order=[42]
+    ))
     print(result)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

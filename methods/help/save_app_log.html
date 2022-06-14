@@ -19,5 +19,12 @@ help.saveAppLog#6f02f748 events:<a href="../../index.html#vector">Vector</a>&lt;
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.help.SaveAppLogRequest(events=[types.InputAppEvent(time=7.13,type=<em>'some string here'</em>,peer=-12398745604826,data=types.JsonNull())]))
+    result = client(functions.help.SaveAppLogRequest(
+        events=[types.InputAppEvent(
+            time=7.13,
+            type=<em>'some string here'</em>,
+            peer=-12398745604826,
+            data=types.JsonNull()
+        )]
+    ))
     print(result)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

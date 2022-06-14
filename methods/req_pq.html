@@ -19,5 +19,7 @@ req_pq#60469778 nonce:<a href="../index.html#int128">int128</a> = <a href="../ty
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.ReqPqRequest(nonce=int.from_bytes(os.urandom(16), <em>'big'</em>)))
+    result = client(functions.ReqPqRequest(
+        nonce=int.from_bytes(os.urandom(16), <em>'big'</em>)
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../";</script><script src="../js/search.js"></script></body></html>

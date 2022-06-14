@@ -19,5 +19,8 @@ contacts.getBlocked#f57c350f offset:<a href="../../index.html#int">int</a> limit
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.contacts.GetBlockedRequest(offset=42,limit=100))
+    result = client(functions.contacts.GetBlockedRequest(
+        offset=42,
+        limit=100
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

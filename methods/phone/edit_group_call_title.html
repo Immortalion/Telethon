@@ -19,5 +19,11 @@ phone.editGroupCallTitle#1ca6ac0a call:<a href="../../types/input_group_call.htm
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.phone.EditGroupCallTitleRequest(call=types.InputGroupCall(id=-12398745604826,access_hash=-12398745604826),title=<em>'My awesome title'</em>))
+    result = client(functions.phone.EditGroupCallTitleRequest(
+        call=types.InputGroupCall(
+            id=-12398745604826,
+            access_hash=-12398745604826
+        ),
+        title=<em>'My awesome title'</em>
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

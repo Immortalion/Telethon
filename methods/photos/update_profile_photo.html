@@ -19,5 +19,11 @@ photos.updateProfilePhoto#72d4742c id:<a href="../../types/input_photo.html">Inp
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.photos.UpdateProfilePhotoRequest(id=types.InputPhoto(id=-12398745604826,access_hash=-12398745604826,file_reference=<em>b'arbitrary\x7f data \xfa here'</em>)))
+    result = client(functions.photos.UpdateProfilePhotoRequest(
+        id=types.InputPhoto(
+            id=-12398745604826,
+            access_hash=-12398745604826,
+            file_reference=<em>b'arbitrary\x7f data \xfa here'</em>
+        )
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

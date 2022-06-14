@@ -19,5 +19,11 @@ invokeWithMessagesRange#365275f2 {X:Type} range:<a href="../types/message_range.
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.InvokeWithMessagesRangeRequest(range=types.MessageRange(min_id=0,max_id=0),query=other_request))
+    result = client(functions.InvokeWithMessagesRangeRequest(
+        range=types.MessageRange(
+            min_id=0,
+            max_id=0
+        ),
+        query=other_request
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../";</script><script src="../js/search.js"></script></body></html>

@@ -19,5 +19,10 @@ messages.getSearchResultsPositions#6e9583a3 peer:<a href="../../types/input_peer
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.GetSearchResultsPositionsRequest(peer=<em>'username'</em>,filter=types.InputMessagesFilterPhotos(),offset_id=42,limit=100))
+    result = client(functions.messages.GetSearchResultsPositionsRequest(
+        peer=<em>'username'</em>,
+        filter=types.InputMessagesFilterPhotos(),
+        offset_id=42,
+        limit=100
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

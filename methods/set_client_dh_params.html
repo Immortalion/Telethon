@@ -19,5 +19,9 @@ set_client_DH_params#f5045f1f nonce:<a href="../index.html#int128">int128</a> se
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.SetClientDHParamsRequest(nonce=int.from_bytes(os.urandom(16), <em>'big'</em>),server_nonce=int.from_bytes(os.urandom(16), <em>'big'</em>),encrypted_data=<em>b'arbitrary\x7f data \xfa here'</em>))
+    result = client(functions.SetClientDHParamsRequest(
+        nonce=int.from_bytes(os.urandom(16), <em>'big'</em>),
+        server_nonce=int.from_bytes(os.urandom(16), <em>'big'</em>),
+        encrypted_data=<em>b'arbitrary\x7f data \xfa here'</em>
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../";</script><script src="../js/search.js"></script></body></html>

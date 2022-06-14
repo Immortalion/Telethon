@@ -19,5 +19,9 @@ help.acceptTermsOfService#ee72f79a id:<a href="../../types/data_json.html">DataJ
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.help.AcceptTermsOfServiceRequest(id=types.DataJSON(data=<em>'some string here'</em>)))
+    result = client(functions.help.AcceptTermsOfServiceRequest(
+        id=types.DataJSON(
+            data=<em>'some string here'</em>
+        )
+    ))
     print(result)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

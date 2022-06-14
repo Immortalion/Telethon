@@ -19,5 +19,9 @@ account.unregisterDevice#6a0d3206 token_type:<a href="../../index.html#int">int<
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.account.UnregisterDeviceRequest(token_type=42,token=<em>'some string here'</em>,other_uids=[-12398745604826]))
+    result = client(functions.account.UnregisterDeviceRequest(
+        token_type=42,
+        token=<em>'some string here'</em>,
+        other_uids=[-12398745604826]
+    ))
     print(result)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

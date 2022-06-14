@@ -19,5 +19,10 @@ contacts.blockFromReplies#29a8962c flags:# delete_message:flags.0?<a href="../..
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.contacts.BlockFromRepliesRequest(msg_id=42,delete_message=<strong>True</strong>,delete_history=<strong>True</strong>,report_spam=<strong>True</strong>))
+    result = client(functions.contacts.BlockFromRepliesRequest(
+        msg_id=42,
+        delete_message=<strong>True</strong>,
+        delete_history=<strong>True</strong>,
+        report_spam=<strong>True</strong>
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

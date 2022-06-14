@@ -19,5 +19,11 @@ contacts.addContact#e8f463d0 flags:# add_phone_privacy_exception:flags.0?<a href
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.contacts.AddContactRequest(id=<em>'username'</em>,first_name=<em>'some string here'</em>,last_name=<em>'some string here'</em>,phone=<em>'some string here'</em>,add_phone_privacy_exception=<strong>True</strong>))
+    result = client(functions.contacts.AddContactRequest(
+        id=<em>'username'</em>,
+        first_name=<em>'some string here'</em>,
+        last_name=<em>'some string here'</em>,
+        phone=<em>'some string here'</em>,
+        add_phone_privacy_exception=<strong>True</strong>
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

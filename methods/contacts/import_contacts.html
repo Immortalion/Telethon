@@ -19,5 +19,12 @@ contacts.importContacts#2c800be5 contacts:<a href="../../index.html#vector">Vect
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.contacts.ImportContactsRequest(contacts=[types.InputPhoneContact(client_id=random.randrange(-2**63, 2**63),phone=<em>'some string here'</em>,first_name=<em>'some string here'</em>,last_name=<em>'some string here'</em>)]))
+    result = client(functions.contacts.ImportContactsRequest(
+        contacts=[types.InputPhoneContact(
+            client_id=random.randrange(-2**63, 2**63),
+            phone=<em>'some string here'</em>,
+            first_name=<em>'some string here'</em>,
+            last_name=<em>'some string here'</em>
+        )]
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

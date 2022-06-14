@@ -19,5 +19,14 @@ account.sendChangePhoneCode#82574ae5 phone_number:<a href="../../index.html#stri
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.account.SendChangePhoneCodeRequest(phone_number=<em>'some string here'</em>,settings=types.CodeSettings(allow_flashcall=<strong>True</strong>,current_number=<strong>True</strong>,allow_app_hash=<strong>True</strong>,allow_missed_call=<strong>True</strong>,logout_tokens=[<em>b'arbitrary\x7f data \xfa here'</em>])))
+    result = client(functions.account.SendChangePhoneCodeRequest(
+        phone_number=<em>'some string here'</em>,
+        settings=types.CodeSettings(
+            allow_flashcall=<strong>True</strong>,
+            current_number=<strong>True</strong>,
+            allow_app_hash=<strong>True</strong>,
+            allow_missed_call=<strong>True</strong>,
+            logout_tokens=[<em>b'arbitrary\x7f data \xfa here'</em>]
+        )
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

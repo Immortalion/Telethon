@@ -19,5 +19,12 @@ messages.getUnreadMentions#46578472 peer:<a href="../../types/input_peer.html">I
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.GetUnreadMentionsRequest(peer=<em>'username'</em>,offset_id=42,add_offset=0,limit=100,max_id=0,min_id=0))
+    result = client(functions.messages.GetUnreadMentionsRequest(
+        peer=<em>'username'</em>,
+        offset_id=42,
+        add_offset=0,
+        limit=100,
+        max_id=0,
+        min_id=0
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

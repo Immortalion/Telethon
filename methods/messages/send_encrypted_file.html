@@ -19,5 +19,17 @@ messages.sendEncryptedFile#5559481d flags:# silent:flags.0?<a href="../../index.
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.SendEncryptedFileRequest(peer=types.InputEncryptedChat(chat_id=478614198,access_hash=-12398745604826),data=<em>b'arbitrary\x7f data \xfa here'</em>,file=types.InputEncryptedFileUploaded(id=-12398745604826,parts=42,md5_checksum=<em>'some string here'</em>,key_fingerprint=42)))
+    result = client(functions.messages.SendEncryptedFileRequest(
+        peer=types.InputEncryptedChat(
+            chat_id=478614198,
+            access_hash=-12398745604826
+        ),
+        data=<em>b'arbitrary\x7f data \xfa here'</em>,
+        file=types.InputEncryptedFileUploaded(
+            id=-12398745604826,
+            parts=42,
+            md5_checksum=<em>'some string here'</em>,
+            key_fingerprint=42
+        )
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

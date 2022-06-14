@@ -19,5 +19,18 @@ account.saveAutoDownloadSettings#76f36233 flags:# low:flags.0?<a href="../../ind
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.account.SaveAutoDownloadSettingsRequest(settings=types.AutoDownloadSettings(photo_size_max=42,video_size_max=42,file_size_max=42,video_upload_maxbitrate=42,disabled=<strong>True</strong>,video_preload_large=<strong>True</strong>,audio_preload_next=<strong>True</strong>,phonecalls_less_data=<strong>True</strong>),low=<strong>True</strong>,high=<strong>True</strong>))
+    result = client(functions.account.SaveAutoDownloadSettingsRequest(
+        settings=types.AutoDownloadSettings(
+            photo_size_max=42,
+            video_size_max=-12398745604826,
+            file_size_max=-12398745604826,
+            video_upload_maxbitrate=42,
+            disabled=<strong>True</strong>,
+            video_preload_large=<strong>True</strong>,
+            audio_preload_next=<strong>True</strong>,
+            phonecalls_less_data=<strong>True</strong>
+        ),
+        low=<strong>True</strong>,
+        high=<strong>True</strong>
+    ))
     print(result)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

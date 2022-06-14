@@ -19,5 +19,34 @@ account.createTheme#652e4400 flags:# slug:<a href="../../index.html#string">stri
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.account.CreateThemeRequest(slug=<em>'some string here'</em>,title=<em>'My awesome title'</em>,document=types.InputDocument(id=-12398745604826,access_hash=-12398745604826,file_reference=<em>b'arbitrary\x7f data \xfa here'</em>),settings=[types.InputThemeSettings(base_theme=types.BaseThemeClassic(),accent_color=42,message_colors_animated=<strong>True</strong>,outbox_accent_color=42,message_colors=[42],wallpaper=types.InputWallPaper(id=-12398745604826,access_hash=-12398745604826),wallpaper_settings=types.WallPaperSettings(blur=<strong>True</strong>,motion=<strong>True</strong>,background_color=42,second_background_color=42,third_background_color=42,fourth_background_color=42,intensity=42,rotation=42))]))
+    result = client(functions.account.CreateThemeRequest(
+        slug=<em>'some string here'</em>,
+        title=<em>'My awesome title'</em>,
+        document=types.InputDocument(
+            id=-12398745604826,
+            access_hash=-12398745604826,
+            file_reference=<em>b'arbitrary\x7f data \xfa here'</em>
+        ),
+        settings=[types.InputThemeSettings(
+            base_theme=types.BaseThemeClassic(),
+            accent_color=42,
+            message_colors_animated=<strong>True</strong>,
+            outbox_accent_color=42,
+            message_colors=[42],
+            wallpaper=types.InputWallPaper(
+                id=-12398745604826,
+                access_hash=-12398745604826
+            ),
+            wallpaper_settings=types.WallPaperSettings(
+                blur=<strong>True</strong>,
+                motion=<strong>True</strong>,
+                background_color=42,
+                second_background_color=42,
+                third_background_color=42,
+                fourth_background_color=42,
+                intensity=42,
+                rotation=42
+            )
+        )]
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

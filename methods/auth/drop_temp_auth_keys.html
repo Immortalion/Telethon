@@ -19,5 +19,7 @@ auth.dropTempAuthKeys#8e48a188 except_auth_keys:<a href="../../index.html#vector
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.auth.DropTempAuthKeysRequest(except_auth_keys=[-12398745604826]))
+    result = client(functions.auth.DropTempAuthKeysRequest(
+        except_auth_keys=[-12398745604826]
+    ))
     print(result)</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>

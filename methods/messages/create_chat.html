@@ -19,5 +19,8 @@ messages.createChat#09cb126e users:<a href="../../index.html#vector">Vector</a>&
 <strong>from</strong> telethon <strong>import</strong> functions, types
 
 <strong>with</strong> TelegramClient(name, api_id, api_hash) <strong>as</strong> client:
-    result = client(functions.messages.CreateChatRequest(users=[<em>'username'</em>],title=<em>'My awesome title'</em>))
+    result = client(functions.messages.CreateChatRequest(
+        users=[<em>'username'</em>],
+        title=<em>'My awesome title'</em>
+    ))
     print(result.stringify())</pre><textarea id="c" class="invisible"></textarea><script>function cp(t){var c=document.getElementById("c");c.value=t;c.select();try{document.execCommand("copy")}catch(e){}}</script></div><script>prependPath = "../../";</script><script src="../../js/search.js"></script></body></html>
