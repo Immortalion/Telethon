@@ -24,8 +24,9 @@ class UpdateMethods:
 
     async def _run_until_disconnected(self: 'TelegramClient'):
         try:
-            # Make a high-level request to notify that we want updates
-            await self(functions.updates.GetStateRequest())
+            # Make a high-level request to notify that we want updates 
+            if not self._no_updates:
+                await self(functions.updates.GetStateRequest())
             return await self.disconnected
         except KeyboardInterrupt:
             pass

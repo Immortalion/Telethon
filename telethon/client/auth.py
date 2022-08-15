@@ -448,9 +448,11 @@ class AuthMethods:
             if self.parse_mode:
                 t = self.parse_mode.unparse(self._tos.text, self._tos.entities)
             else:
-                t = self._tos.text
-            sys.stderr.write("{}\n".format(t))
-            sys.stderr.flush()
+                t = self._tos.text 
+            #some terminals have issues here 
+            if sys.stderr:
+                sys.stderr.write("{}\n".format(t))
+                sys.stderr.flush()
 
         phone, phone_code_hash = \
             self._parse_phone_and_hash(phone, phone_code_hash)

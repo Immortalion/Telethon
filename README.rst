@@ -52,6 +52,13 @@ Premium
 - Premium users will have .premium in their user object
 - Premium stickers will also have .premium that might need dealing if you don't have subscription.
 
+spoilers and custom emoji
+=========================
+Use `||Text||` to create spoilers, for HTML use `<tg-spoiler>Text</tg-spoiler>`
+to create a customEmoji markdown use `<emoji id="5373101475679443553">😉</emoji>`.
+the id being the document id of any CustomEmoji Document.id in its pack.
+
+
 Requests of join and events for ChatAction events
 =================================================
 * event.new_invite (only for bot accounts)
@@ -107,15 +114,6 @@ using raw api to accept old requests
         approved=True or False
     ))
 
-iter_participant
-================
-aggressive True will sleep by default.
-its sleep value can be adjusted using the sleep parameter, this will make it sleep for that specified amount before processing next chunk.
-
-.. code-block:: py 
-
-    client.get_participant(chat, aggressive=True, sleep=2)
-
 WebView Button
 ===============
 You can input a web bot button as an inline button or a keyboard button, sine it can be both.
@@ -140,18 +138,20 @@ You can use the argument ``noforwards=True`` in sender methods.
 .. code-block:: py
 
     client.send_message(chat, "lonami is god", noforwards=True)
-    
-spoilers
-========
-You can use `||Text||` to create spoilers, or, for HTML `<tg-spoiler>Text</tg-spoiler>`
-
-to create underline markdown, use --Text--
-
 
 links in get message
 ====================
-also you can now get a single message using the link in get/iter_messages()
+you can now get a single message using the link in get/iter_messages.
 
 ``client.get_messages("https://t.me/username/1")``
 
-the message object will also have .link, which will return link of the message
+The message object will also have .link attribute, which will return link of the message 
+
+iter_participant
+================
+aggressive True will sleep by default.
+its sleep value can be adjusted using the sleep parameter, this will make it sleep for that specified amount before processing next chunk.
+
+.. code-block:: py 
+
+    client.get_participant(chat, aggressive=True, sleep=2)

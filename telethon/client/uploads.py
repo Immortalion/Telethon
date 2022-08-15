@@ -106,6 +106,7 @@ class UploadMethods:
             attributes: 'typing.Sequence[types.TypeDocumentAttribute]' = None,
             thumb: 'hints.FileLike' = None,
             allow_cache: bool = True,
+            as_image: bool = None,
             parse_mode: str = (),
             formatting_entities: typing.Optional[typing.List[types.TypeMessageEntity]] = None,
             voice_note: bool = False,
@@ -397,7 +398,7 @@ class UploadMethods:
             progress_callback=progress_callback,
             attributes=attributes,  allow_cache=allow_cache, thumb=thumb,
             voice_note=voice_note, video_note=video_note,
-            supports_streaming=supports_streaming, ttl=ttl
+            supports_streaming=supports_streaming, as_image=as_image, ttl=ttl
         )
 
         # e.g. invalid cast from :tl:`MessageMediaWebPage`
@@ -447,7 +448,7 @@ class UploadMethods:
             # it as media and then convert that to :tl:`InputMediaPhoto`.
             fh, fm, _ = await self._file_to_media(
                 file, supports_streaming=supports_streaming,
-                force_document=force_document, ttl=ttl)
+                force_document=force_document, ttl=ttl, as_image=as_image)
             if isinstance(fm, (types.InputMediaUploadedPhoto, types.InputMediaPhotoExternal)):
                 r = await self(functions.messages.UploadMediaRequest(
                     entity, media=fm
