@@ -90,8 +90,10 @@ class HTMLToTelegramParser(HTMLParser):
             self._open_tags_meta.popleft()
             self._open_tags_meta.appendleft(url)
         elif tag == "emoji":
-            EntityType = MessageEntityCustomEmoji
-            args["document_id"] = int(attrs["document_id"])
+            ids = attrs.get("document_id") or attrs.get("id")
+            if ids:
+                EntityType = MessageEntityCustomEmoji
+                args["document_id"] = int(ids)
 
         if EntityType and tag not in self._building_entities:
             self._building_entities[tag] = EntityType(
@@ -211,3 +213,4 @@ class TextDecoration():
     def custom_emoji(self, value, document_id):
         return f'<emoji id="{document_id}">{value}</emoji>'
 
+unparse = TextDecoration().unparse
