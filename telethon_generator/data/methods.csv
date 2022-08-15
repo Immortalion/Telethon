@@ -8,7 +8,7 @@ account.confirmPhone,user,CODE_HASH_INVALID PHONE_CODE_EMPTY
 account.createTheme,user,THEME_MIME_INVALID
 account.declinePasswordReset,user,RESET_REQUEST_MISSING
 account.deleteAccount,user,2FA_CONFIRM_WAIT_X
-account.deleteSecureValue,,
+account.deleteSecureValue,user,
 account.finishTakeoutSession,user,
 account.getAccountTTL,user,
 account.getAllSecureValues,user,
