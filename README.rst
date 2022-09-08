@@ -25,6 +25,15 @@ install: (if any issues, try uninstalling telethon first):
 .. code-block:: py
 
   pip install -U newthon
+  
+
+Fixed bug with album sending
+============================
+.. code-block:: py
+    
+    client.send_file()
+
+now works properly with albums
 
 
 Reactions
